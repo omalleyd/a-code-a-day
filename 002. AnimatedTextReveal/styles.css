@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #151515;
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  font-family: sans-serif;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.title-content {
+  display: block;
+  opacity: 0;
+  animation: revealText 0.5s forwards;
+}
+
+.title-second {
+  animation-delay: 0.25s;
+}
+
+.title-third {
+  animation-delay: 0.5s;
+}
+
+.title-fourth {
+  animation-delay: 0.75s;
+}
+
+@keyframes revealText {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
